@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import CounterWithResetButton from "./components/CounterWithResetButton";
+import StyleSwitcher from "./components/StyleSwitcher";
+import TimerComponent from "./components/TimerComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (<>
+
+            <div className="main-container">
+                <h1>CONTADOR</h1>
+
+                <CounterWithResetButton/>
+
+
+                <h1>Swticher</h1>
+                <StyleSwitcher/>
+                <h1>Timer</h1>
+
+                <TimerComponent/>
+            </div>
+        </>
+
+    );
 }
 
 export default App;
